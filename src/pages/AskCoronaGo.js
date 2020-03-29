@@ -62,7 +62,7 @@ function AskCoronaGo() {
         let fixedData = fixLengths(filteredResult);
         let net = new brain.NeuralNetwork();
         net.train(fixedData, {
-          iterations: 200,
+          iterations: 100,
           log: true
         });
         trainedNet = net.toFunction();
